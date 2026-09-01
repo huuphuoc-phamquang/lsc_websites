@@ -5,8 +5,8 @@
 	<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(28,69,135,0.95) 0%,rgba(28,69,135,0.85) 35%,rgba(28,69,135,0.45) 62%,rgba(28,69,135,0) 88%)"></div>
 	<div style="position:relative;padding:88px 36px 56px;display:grid;grid-template-columns:1fr;gap:48px;align-items:end;min-height:680px">
 		<div style="display:flex;flex-direction:column;gap:24px">
-			<h1 style="margin:0;color:#FFFFFF;font-size:70px;line-height:0.98;letter-spacing:-0.025em">CLB Logistics HCMC</h1>
-			<p style="margin:0;font-size:18px;line-height:1.55;max-width:56ch;color:rgba(243,245,248,0.82)">Logistics Studying Club tự hào là CLB tiên phong của trường Đại học Ngoại thương Cơ sở II trong lĩnh vực Logistics và Quản lý chuỗi cung ứng.</p>
+			<h1 style="margin:0;color:#FFFFFF;font-size:70px;line-height:0.98;letter-spacing:-0.025em"><?php echo esc_html( lsc_field( 'hero_title', 'CLB Logistics HCMC' ) ); ?></h1>
+			<p style="margin:0;font-size:18px;line-height:1.55;max-width:56ch;color:rgba(243,245,248,0.82)"><?php echo esc_html( lsc_field( 'hero_text', 'Logistics Studying Club tự hào là CLB tiên phong của trường Đại học Ngoại thương Cơ sở II trong lĩnh vực Logistics và Quản lý chuỗi cung ứng.' ) ); ?></p>
 			<div style="display:flex;gap:12px">
 				<a href="https://www.facebook.com/lscftuhcmc" target="_blank" rel="noopener noreferrer" style="background:#1C4587;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;border:1px solid #FFFFFF;box-shadow:0 6px 18px rgba(0,0,0,0.22);display:inline-flex;align-items:center;white-space:nowrap">Fanpage Câu lạc bộ Logistics FTU HCMC</a>
 				<a href="https://www.facebook.com/scmissionlsc" target="_blank" rel="noopener noreferrer" style="background:#CC0000;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;border:1px solid #FFFFFF;box-shadow:0 6px 18px rgba(0,0,0,0.22);display:inline-flex;align-items:center;white-space:nowrap">Fanpage SCMission</a>
@@ -29,7 +29,7 @@
 		<div style="display:flex">
 			<span style="font-size:26px;font-weight:800;color:#CC0000">Sứ mệnh</span>
 		</div>
-		<div style="margin:0;font-size:17px;line-height:1.6">Được thành lập vào năm 2014 và lấy slogan là &ldquo;Ship your dream&rdquo;, Câu lạc bộ Logistics đã và sẽ luôn nỗ lực, phấn đấu với mục tiêu cung cấp cho ngành Logistics và Quản lý chuỗi cung ứng nguồn nhân lực chất lượng cao.</div>
+		<div style="margin:0;font-size:17px;line-height:1.6"><?php echo esc_html( lsc_field( 'mission_text', 'Được thành lập vào năm 2014 và lấy slogan là “Ship your dream”, Câu lạc bộ Logistics đã và sẽ luôn nỗ lực, phấn đấu với mục tiêu cung cấp cho ngành Logistics và Quản lý chuỗi cung ứng nguồn nhân lực chất lượng cao.' ) ); ?></div>
 	</div>
 </div>
 
@@ -58,16 +58,16 @@
 				<span style="font-size:11px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;border:1px solid rgba(243,245,248,0.45);color:#FFFFFF;padding:5px 12px;border-radius:999px;display:inline-flex;align-items:center;white-space:nowrap">Cuộc thi học thuật</span>
 			</div>
 			<h3 style="margin:0;position:relative;color:#FFFFFF;font-size:56px;line-height:0.98;letter-spacing:-0.03em;text-transform:uppercase">SCMission</h3>
-			<p style="margin:0;position:relative;font-size:17px;line-height:1.6;color:rgba(243,245,248,0.85);max-width:46ch">Cuộc thi phân tích và giải quyết tình huống kinh doanh trong lĩnh vực Logistics và Quản lý chuỗi cung ứng, do CLB tổ chức thường niên cùng các doanh nghiệp trong ngành.</p>
+			<p style="margin:0;position:relative;font-size:17px;line-height:1.6;color:rgba(243,245,248,0.85);max-width:46ch"><?php echo esc_html( lsc_field( 'scmission_desc', 'Cuộc thi phân tích và giải quyết tình huống kinh doanh trong lĩnh vực Logistics và Quản lý chuỗi cung ứng, do CLB tổ chức thường niên cùng các doanh nghiệp trong ngành.' ) ); ?></p>
 			<div style="position:relative;display:flex;gap:12px;margin-top:6px">
 				<a href="https://www.facebook.com/scmissionlsc" target="_blank" rel="noopener noreferrer" style="background:#CC0000;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;display:inline-flex;align-items:center;white-space:nowrap">Fanpage SCMission</a>
 			</div>
 		</div>
 		<div style="position:relative;padding:44px 40px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-content:center;border-left:1px solid rgba(243,245,248,0.2)">
-			<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:52px;font-weight:800;line-height:0.95;letter-spacing:-0.03em;color:#FFFFFF">09</span><span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.65)">Mùa tổ chức</span></div>
-			<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:52px;font-weight:800;line-height:0.95;letter-spacing:-0.03em;color:#FFFFFF">5000+</span><span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.65)">Thí sinh tham gia</span></div>
-			<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:52px;font-weight:800;line-height:0.95;letter-spacing:-0.03em;color:#FFFFFF">70+</span><span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.65)">Doanh nghiệp đồng hành</span></div>
-			<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:52px;font-weight:800;line-height:0.95;letter-spacing:-0.03em;color:#FFFFFF">40+</span><span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.65)">Trường đại học</span></div>
+			<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:52px;font-weight:800;line-height:0.95;letter-spacing:-0.03em;color:#FFFFFF"><?php echo esc_html( lsc_field( 'scmission_stat_seasons', '09' ) ); ?></span><span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.65)">Mùa tổ chức</span></div>
+			<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:52px;font-weight:800;line-height:0.95;letter-spacing:-0.03em;color:#FFFFFF"><?php echo esc_html( lsc_field( 'scmission_stat_participants', '5000+' ) ); ?></span><span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.65)">Thí sinh tham gia</span></div>
+			<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:52px;font-weight:800;line-height:0.95;letter-spacing:-0.03em;color:#FFFFFF"><?php echo esc_html( lsc_field( 'scmission_stat_sponsors', '70+' ) ); ?></span><span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.65)">Doanh nghiệp đồng hành</span></div>
+			<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:52px;font-weight:800;line-height:0.95;letter-spacing:-0.03em;color:#FFFFFF"><?php echo esc_html( lsc_field( 'scmission_stat_universities', '40+' ) ); ?></span><span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.65)">Trường đại học</span></div>
 		</div>
 	</div>
 	<div id="du-an" style="display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:20px;align-items:stretch;min-height:520px;scroll-margin-top:80px">
@@ -77,7 +77,7 @@
 			<div style="position:relative;padding:28px;display:flex;flex-direction:column;gap:10px">
 				<span style="font-size:11px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;background:#CC0000;color:#FFFFFF;padding:4px 10px;border-radius:999px;display:inline-flex;align-items:center;white-space:nowrap;align-self:flex-start">Dự án tiêu biểu</span>
 				<h4 style="margin:0;color:#FFFFFF;font-size:28px">Podcast Giữa đại lộ cung ứng</h4>
-				<p style="margin:0;font-size:14px;line-height:1.55;color:rgba(243,245,248,0.88)">Bản tin phân tích thị trường vận tải và chuỗi cung ứng.</p>
+				<p style="margin:0;font-size:14px;line-height:1.55;color:rgba(243,245,248,0.88)"><?php echo esc_html( lsc_field( 'podcast_desc', 'Bản tin phân tích thị trường vận tải và chuỗi cung ứng.' ) ); ?></p>
 				<div style="display:flex;gap:8px;flex-wrap:wrap">
 					<a href="https://youtu.be/RXvHv6D1uBw" target="_blank" rel="noopener noreferrer" style="background:#CC0000;color:#FFFFFF;font-size:13px;font-weight:800;padding:10px 16px;border-radius:999px;border:1px solid #FFFFFF;box-shadow:0 6px 18px rgba(0,0,0,0.22);display:inline-flex;align-items:center;white-space:nowrap">Nghe Podcast tại đây</a>
 				</div>
@@ -88,7 +88,7 @@
 			<span style="position:absolute;inset:0;background:linear-gradient(to top,rgba(28,69,135,0.92) 0%,rgba(28,69,135,0.70) 40%,rgba(28,69,135,0.12) 100%)"></span>
 			<div style="position:relative;padding:20px;display:flex;flex-direction:column;gap:8px">
 				<h4 style="margin:0;color:#FFFFFF;font-size:19px">Workshop học thuật</h4>
-				<p style="margin:0;font-size:14px;line-height:1.55;color:rgba(243,245,248,0.88)">Ba tuần nền tảng logistics dành cho tân thành viên.</p>
+				<p style="margin:0;font-size:14px;line-height:1.55;color:rgba(243,245,248,0.88)"><?php echo esc_html( lsc_field( 'workshop_desc', 'Ba tuần nền tảng logistics dành cho tân thành viên.' ) ); ?></p>
 			</div>
 		</article>
 		<article style="position:relative;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end">
@@ -96,7 +96,7 @@
 			<span style="position:absolute;inset:0;background:linear-gradient(to top,rgba(28,69,135,0.92) 0%,rgba(28,69,135,0.70) 40%,rgba(28,69,135,0.12) 100%)"></span>
 			<div style="position:relative;padding:20px;display:flex;flex-direction:column;gap:8px">
 				<h4 style="margin:0;color:#FFFFFF;font-size:19px">Training nội bộ</h4>
-				<p style="margin:0;font-size:14px;line-height:1.55;color:rgba(243,245,248,0.88)">Chuỗi đào tạo nền tảng Logistics và Quản lý chuỗi cung ứng cho thành viên mới, do ban chuyên môn dẫn dắt.</p>
+				<p style="margin:0;font-size:14px;line-height:1.55;color:rgba(243,245,248,0.88)"><?php echo esc_html( lsc_field( 'training_desc', 'Chuỗi đào tạo nền tảng Logistics và Quản lý chuỗi cung ứng cho thành viên mới, do ban chuyên môn dẫn dắt.' ) ); ?></p>
 			</div>
 		</article>
 	</div>

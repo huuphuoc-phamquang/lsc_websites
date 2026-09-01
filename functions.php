@@ -51,6 +51,55 @@ function lsc_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'lsc_customize_register' );
 
+/**
+ * ACF fields for the front-page copy that changes over time (hero, mission,
+ * SCMission, project cards). Only registers if ACF is installed/active.
+ */
+function lsc_register_acf_fields() {
+	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+		return;
+	}
+
+	acf_add_local_field_group( array(
+		'key'      => 'group_lsc_front_page',
+		'title'    => 'Nội dung trang chủ',
+		'location' => array(
+			array(
+				array(
+					'param'    => 'page_type',
+					'operator' => '==',
+					'value'    => 'front_page',
+				),
+			),
+		),
+		'fields'   => array(
+			array( 'key' => 'field_hero_title', 'name' => 'hero_title', 'label' => 'Tiêu đề Hero', 'type' => 'text' ),
+			array( 'key' => 'field_hero_text', 'name' => 'hero_text', 'label' => 'Đoạn giới thiệu Hero', 'type' => 'textarea', 'rows' => 3 ),
+			array( 'key' => 'field_mission_text', 'name' => 'mission_text', 'label' => 'Nội dung Sứ mệnh', 'type' => 'textarea', 'rows' => 3 ),
+			array( 'key' => 'field_scmission_desc', 'name' => 'scmission_desc', 'label' => 'Mô tả SCMission', 'type' => 'textarea', 'rows' => 3 ),
+			array( 'key' => 'field_scmission_stat_seasons', 'name' => 'scmission_stat_seasons', 'label' => 'SCMission - Mùa tổ chức', 'type' => 'text' ),
+			array( 'key' => 'field_scmission_stat_participants', 'name' => 'scmission_stat_participants', 'label' => 'SCMission - Thí sinh tham gia', 'type' => 'text' ),
+			array( 'key' => 'field_scmission_stat_sponsors', 'name' => 'scmission_stat_sponsors', 'label' => 'SCMission - Doanh nghiệp đồng hành', 'type' => 'text' ),
+			array( 'key' => 'field_scmission_stat_universities', 'name' => 'scmission_stat_universities', 'label' => 'SCMission - Trường đại học', 'type' => 'text' ),
+			array( 'key' => 'field_podcast_desc', 'name' => 'podcast_desc', 'label' => 'Mô tả Podcast', 'type' => 'textarea', 'rows' => 2 ),
+			array( 'key' => 'field_workshop_desc', 'name' => 'workshop_desc', 'label' => 'Mô tả Workshop học thuật', 'type' => 'textarea', 'rows' => 2 ),
+			array( 'key' => 'field_training_desc', 'name' => 'training_desc', 'label' => 'Mô tả Training nội bộ', 'type' => 'textarea', 'rows' => 2 ),
+		),
+	) );
+}
+add_action( 'acf/init', 'lsc_register_acf_fields' );
+
+/**
+ * Safe wrapper so templates don't fatal-error before ACF is installed/active.
+ */
+function lsc_field( $name, $default = '' ) {
+	if ( ! function_exists( 'get_field' ) ) {
+		return $default;
+	}
+	$value = get_field( $name );
+	return $value ? $value : $default;
+}
+
 function lsc_theme_assets() {
 	wp_enqueue_style(
 		'lsc-google-fonts',
