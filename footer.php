@@ -2,11 +2,13 @@
 	<footer style="background:#1C4587;color:#FFFFFF">
 		<div style="padding:44px 36px;display:grid;grid-template-columns:1.4fr 0.8fr 1fr;gap:44px">
 			<div style="display:flex;flex-direction:column;gap:14px">
-				<?php if ( has_custom_logo() ) : ?>
-					<div style="width:210px"><?php the_custom_logo(); ?></div>
-				<?php else : ?>
-					<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/logo-ngang-trang-trim.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>" style="width:210px;display:block">
-				<?php endif; ?>
+				<div id="site-logo-footer">
+					<?php if ( has_custom_logo() ) : ?>
+						<?php the_custom_logo(); ?>
+					<?php else : ?>
+						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/logo-ngang-trang-trim.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>" style="display:block">
+					<?php endif; ?>
+				</div>
 				<span style="font-size:12px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.55)"><?php echo esc_html( get_theme_mod( 'lsc_footer_note', 'Phân hiệu Trường Đại học Ngoại thương tại TP. Hồ Chí Minh' ) ); ?></span>
 				<p style="margin:0;font-size:14px;line-height:1.6;color:rgba(243,245,248,0.72)">Logistics Studying Club tự hào là CLB tiên phong của trường Đại học Ngoại thương Cơ sở II trong lĩnh vực Logistics và Quản lý chuỗi cung ứng.</p>
 				<div style="display:flex;gap:16px">

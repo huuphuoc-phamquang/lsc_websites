@@ -30,6 +30,25 @@ button, .btn { border-radius: 999px; }
 input, textarea { border-radius: 12px; }
 :focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
 
+#site-logo-header,
+#site-logo-footer { line-height: 0; }
+#site-logo-header img,
+#site-logo-header .custom-logo {
+  height: 44px;
+  width: auto;
+  max-width: 190px;
+  object-fit: contain;
+  display: block;
+}
+#site-logo-footer img,
+#site-logo-footer .custom-logo {
+  height: 50px;
+  width: auto;
+  max-width: 210px;
+  object-fit: contain;
+  display: block;
+}
+
 @media (max-width: 900px) {
   header { flex-wrap: wrap; gap: 12px; }
   #hinh-anh { grid-template-columns: repeat(2, 1fr) !important; }
