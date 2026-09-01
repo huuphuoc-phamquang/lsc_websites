@@ -1,0 +1,41 @@
+/*
+Theme Name: LSC Theme
+Theme URI: https://lscftu2.com
+Author: Logistics Studying Club
+Description: Custom theme for CLB Logistics Studying Club (FTU CS2) - built free of any page-builder plugin.
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 7.4
+Text Domain: lsc-theme
+*/
+
+:root {
+  --navy: #1C4587;
+  --navy-text: #1C4587;
+  --red: #CC0000;
+  --red-hover: #A80000;
+  --body-text: #55677F;
+  --font: "Montserrat", "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { background: #FFFFFF; }
+body { margin: 0; font-family: var(--font); scroll-behavior: smooth; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font); color: var(--navy-text); margin: 0; }
+p, li { color: var(--body-text); }
+a { color: var(--red); text-decoration: none; }
+a:hover { color: var(--red-hover); }
+img { max-width: 100%; }
+button, input, textarea, select { font-family: var(--font); }
+button, .btn { border-radius: 999px; }
+input, textarea { border-radius: 12px; }
+:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+
+@media (max-width: 900px) {
+  header { flex-wrap: wrap; gap: 12px; }
+  #hinh-anh { grid-template-columns: repeat(2, 1fr) !important; }
+  #du-an { grid-template-columns: 1fr !important; grid-template-rows: none !important; min-height: 0 !important; }
+  #du-an > article:first-child { grid-row: auto !important; min-height: 340px; }
+  #scmission { grid-template-columns: 1fr !important; }
+  footer > div:first-child { grid-template-columns: 1fr !important; }
+  h1 { font-size: 44px !important; }
+}
