@@ -19,7 +19,8 @@
 			<a href="https://lscftu2.com"><img src="<?php echo esc_url( get_template_directory_uri() . '/assets/logo-ngang-trang-trim.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>" style="display:block"></a>
 		<?php endif; ?>
 	</div>
-	<div style="display:flex;align-items:center;gap:24px">
+	<button id="lsc-menu-toggle" aria-label="Mở menu" aria-expanded="false" style="display:none;background:none;border:0;color:#FFFFFF;font-size:26px;line-height:1;cursor:pointer;padding:4px">&#9776;</button>
+	<div id="lsc-primary-nav" style="display:flex;align-items:center;gap:24px">
 		<a href="#su-menh" style="font-size:13px;font-weight:600;color:#FFFFFF">Về chúng tôi</a>
 		<a href="#hinh-anh" style="font-size:13px;font-weight:600;color:#FFFFFF">Hình ảnh</a>
 		<a href="#scmission" style="font-size:13px;font-weight:600;color:#FFFFFF">SCMission</a>
@@ -27,3 +28,14 @@
 		<a href="https://lscftu2.com/trang-chu/contact/" style="font-size:13px;font-weight:600;color:#FFFFFF">Liên hệ</a>
 	</div>
 </header>
+<script>
+(function () {
+	var toggle = document.getElementById( 'lsc-menu-toggle' );
+	var nav = document.getElementById( 'lsc-primary-nav' );
+	if ( ! toggle || ! nav ) return;
+	toggle.addEventListener( 'click', function () {
+		var isOpen = nav.classList.toggle( 'is-open' );
+		toggle.setAttribute( 'aria-expanded', isOpen ? 'true' : 'false' );
+	} );
+})();
+</script>

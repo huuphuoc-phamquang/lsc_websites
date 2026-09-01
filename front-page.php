@@ -13,7 +13,7 @@
 			</div>
 		</div>
 	</div>
-	<div style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,0.22);background:#1C4587">
+	<div id="hero-stats" style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,0.22);background:#1C4587">
 		<div style="padding:22px 24px;border-right:1px solid rgba(243,245,248,0.2);display:flex;flex-direction:column;gap:2px"><span style="font-size:36px;font-weight:800;letter-spacing:-0.02em">30+</span><span style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(243,245,248,0.6)">Sự kiện &amp; dự án</span></div>
 		<div style="padding:22px 24px;border-right:1px solid rgba(243,245,248,0.2);display:flex;flex-direction:column;gap:2px"><span style="font-size:36px;font-weight:800;letter-spacing:-0.02em">350+</span><span style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(243,245,248,0.6)">Thành viên &amp; CTV</span></div>
 		<div style="padding:22px 24px;border-right:1px solid rgba(243,245,248,0.2);display:flex;flex-direction:column;gap:2px"><span style="font-size:36px;font-weight:800;letter-spacing:-0.02em">100+</span><span style="font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(243,245,248,0.6)">Doanh nghiệp đồng hành</span></div>
@@ -21,7 +21,7 @@
 	</div>
 </div>
 
-<div style="padding:56px 36px;display:grid;grid-template-columns:0.85fr 1.15fr;gap:48px">
+<div id="mission-grid" style="padding:56px 36px;display:grid;grid-template-columns:0.85fr 1.15fr;gap:48px">
 	<div style="display:flex;flex-direction:column;gap:14px">
 		<h2 style="margin:0;font-size:64px;line-height:1.0;letter-spacing:-0.03em"><span style="color:#1C4587;font-family:&quot;Montserrat&quot;,&quot;Be Vietnam Pro&quot;,sans-serif;font-weight:800;letter-spacing:-0.03em;text-transform:uppercase;display:block;font-size:96px;line-height:0.9;">SHIP<br>YOUR<br>DREAMS</span></h2>
 	</div>

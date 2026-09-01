@@ -50,11 +50,35 @@ input, textarea { border-radius: 12px; }
 }
 
 @media (max-width: 900px) {
-  header { flex-wrap: wrap; gap: 12px; }
   #hinh-anh { grid-template-columns: repeat(2, 1fr) !important; }
   #du-an { grid-template-columns: 1fr !important; grid-template-rows: none !important; min-height: 0 !important; }
   #du-an > article:first-child { grid-row: auto !important; min-height: 340px; }
   #scmission { grid-template-columns: 1fr !important; }
-  footer > div:first-child { grid-template-columns: 1fr !important; }
+  #footer-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
   h1 { font-size: 44px !important; }
+}
+
+@media (max-width: 640px) {
+  #lsc-menu-toggle { display: block !important; }
+  #lsc-primary-nav {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+    background: #1C4587;
+    padding: 12px 24px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+  #lsc-primary-nav a { padding: 8px 0; width: 100%; }
+  #lsc-primary-nav.is-open { display: flex !important; }
+  header { position: relative; }
+
+  #hero-stats { grid-template-columns: repeat(2, 1fr) !important; }
+  #mission-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+  #mission-grid h2 span { font-size: 56px !important; }
+  #hinh-anh { grid-template-columns: 1fr !important; }
 }

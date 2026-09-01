@@ -1,6 +1,6 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
 	<footer style="background:#1C4587;color:#FFFFFF">
-		<div style="padding:44px 36px;display:grid;grid-template-columns:1.4fr 0.8fr 1fr;gap:44px">
+		<div id="footer-grid" style="padding:44px 36px;display:grid;grid-template-columns:1.4fr 0.8fr 1fr;gap:44px">
 			<div style="display:flex;flex-direction:column;gap:14px">
 				<div id="site-logo-footer">
 					<?php if ( has_custom_logo() ) : ?>
