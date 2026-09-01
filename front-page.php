@@ -7,9 +7,9 @@
 		<div style="display:flex;flex-direction:column;gap:24px">
 			<h1 style="margin:0;color:#FFFFFF;font-size:70px;line-height:0.98;letter-spacing:-0.025em"><?php echo esc_html( lsc_field( 'hero_title', 'CLB Logistics HCMC' ) ); ?></h1>
 			<p style="margin:0;font-size:18px;line-height:1.55;max-width:56ch;color:rgba(243,245,248,0.82)"><?php echo esc_html( lsc_field( 'hero_text', 'Logistics Studying Club tự hào là CLB tiên phong của trường Đại học Ngoại thương Cơ sở II trong lĩnh vực Logistics và Quản lý chuỗi cung ứng.' ) ); ?></p>
-			<div style="display:flex;gap:12px">
+			<div class="lsc-cta-row" style="display:flex;gap:12px">
 				<a href="https://www.facebook.com/lscftuhcmc" target="_blank" rel="noopener noreferrer" class="lsc-btn-wrap" style="background:#1C4587;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;border:1px solid #FFFFFF;box-shadow:0 6px 18px rgba(0,0,0,0.22);display:inline-flex;align-items:center;white-space:nowrap">Fanpage Câu lạc bộ Logistics FTU HCMC</a>
-				<a href="https://www.facebook.com/scmissionlsc" target="_blank" rel="noopener noreferrer" style="background:#CC0000;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;border:1px solid #FFFFFF;box-shadow:0 6px 18px rgba(0,0,0,0.22);display:inline-flex;align-items:center;white-space:nowrap">Fanpage SCMission</a>
+				<a href="https://www.facebook.com/scmissionlsc" target="_blank" rel="noopener noreferrer" class="lsc-btn-wrap" style="background:#CC0000;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;border:1px solid #FFFFFF;box-shadow:0 6px 18px rgba(0,0,0,0.22);display:inline-flex;align-items:center;white-space:nowrap">Fanpage SCMission</a>
 			</div>
 		</div>
 	</div>
@@ -59,8 +59,8 @@
 			</div>
 			<h3 style="margin:0;position:relative;color:#FFFFFF;font-size:56px;line-height:0.98;letter-spacing:-0.03em;text-transform:uppercase">SCMission</h3>
 			<p style="margin:0;position:relative;font-size:17px;line-height:1.6;color:rgba(243,245,248,0.85);max-width:46ch"><?php echo esc_html( lsc_field( 'scmission_desc', 'Cuộc thi phân tích và giải quyết tình huống kinh doanh trong lĩnh vực Logistics và Quản lý chuỗi cung ứng, do CLB tổ chức thường niên cùng các doanh nghiệp trong ngành.' ) ); ?></p>
-			<div style="position:relative;display:flex;gap:12px;margin-top:6px">
-				<a href="https://www.facebook.com/scmissionlsc" target="_blank" rel="noopener noreferrer" style="background:#CC0000;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;display:inline-flex;align-items:center;white-space:nowrap">Fanpage SCMission</a>
+			<div class="lsc-cta-row" style="position:relative;display:flex;gap:12px;margin-top:6px">
+				<a href="https://www.facebook.com/scmissionlsc" target="_blank" rel="noopener noreferrer" class="lsc-btn-wrap" style="background:#CC0000;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;display:inline-flex;align-items:center;white-space:nowrap">Fanpage SCMission</a>
 			</div>
 		</div>
 		<div style="position:relative;padding:44px 40px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-content:center;border-left:1px solid rgba(243,245,248,0.2)">
