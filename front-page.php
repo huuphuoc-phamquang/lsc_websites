@@ -3,7 +3,7 @@
 <div style="position:relative;background:#1C4587;color:#FFFFFF;overflow:hidden">
 	<div style="position:absolute;inset:0"><img src="https://lscftu2.com/wp-content/uploads/2024/06/IMG_9630-1-scaled.jpg" alt="Tập thể Logistics Studying Club" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block"></div>
 	<div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(28,69,135,0.95) 0%,rgba(28,69,135,0.85) 35%,rgba(28,69,135,0.45) 62%,rgba(28,69,135,0) 88%)"></div>
-	<div style="position:relative;padding:88px 36px 56px;display:grid;grid-template-columns:1fr;gap:48px;align-items:end;min-height:680px">
+	<div id="hero-inner" style="position:relative;padding:88px 36px 56px;display:grid;grid-template-columns:1fr;gap:48px;align-items:end;min-height:680px">
 		<div style="display:flex;flex-direction:column;gap:24px">
 			<h1 style="margin:0;color:#FFFFFF;font-size:70px;line-height:0.98;letter-spacing:-0.025em"><?php echo esc_html( lsc_field( 'hero_title', 'CLB Logistics HCMC' ) ); ?></h1>
 			<p style="margin:0;font-size:18px;line-height:1.55;max-width:56ch;color:rgba(243,245,248,0.82)"><?php echo esc_html( lsc_field( 'hero_text', 'Logistics Studying Club tự hào là CLB tiên phong của trường Đại học Ngoại thương Cơ sở II trong lĩnh vực Logistics và Quản lý chuỗi cung ứng.' ) ); ?></p>
@@ -60,7 +60,7 @@
 			<h3 style="margin:0;position:relative;color:#FFFFFF;font-size:56px;line-height:0.98;letter-spacing:-0.03em;text-transform:uppercase">SCMission</h3>
 			<p style="margin:0;position:relative;font-size:17px;line-height:1.6;color:rgba(243,245,248,0.85);max-width:46ch"><?php echo esc_html( lsc_field( 'scmission_desc', 'Cuộc thi phân tích và giải quyết tình huống kinh doanh trong lĩnh vực Logistics và Quản lý chuỗi cung ứng, do CLB tổ chức thường niên cùng các doanh nghiệp trong ngành.' ) ); ?></p>
 			<div class="lsc-cta-row" style="position:relative;display:flex;gap:12px;margin-top:6px">
-				<a href="https://www.facebook.com/scmissionlsc" target="_blank" rel="noopener noreferrer" class="lsc-btn-wrap" style="background:#CC0000;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;display:inline-flex;align-items:center;white-space:nowrap">Fanpage SCMission</a>
+				<a href="https://www.facebook.com/scmissionlsc" target="_blank" rel="noopener noreferrer" class="lsc-btn-wrap" style="background:#CC0000;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;border:1px solid #FFFFFF;display:inline-flex;align-items:center;white-space:nowrap">Fanpage SCMission</a>
 			</div>
 		</div>
 		<div id="scmission-stats" style="position:relative;padding:44px 40px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-content:center;border-left:1px solid rgba(243,245,248,0.2)">
