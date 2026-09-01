@@ -55,14 +55,3 @@ Muốn đưa thêm phần nào ở đây vào Customizer/ACF để tự sửa qu
 1. Tải file theme (`.zip`) đã cập nhật.
 2. wp-admin → **Appearance → Themes → Add New → Upload Theme** → chọn file zip → **Replace current with uploaded**.
 3. Nếu chỉ sửa CSS/màu sắc mà không thấy đổi ngay: **hard refresh** trình duyệt (Ctrl+F5 / Ctrl+Shift+R) — trình duyệt có thể đang cache bản CSS cũ.
-
-## 5. Giao diện điện thoại (mobile)
-
-Trên màn hình ≤640px, một số phần được **ẩn bớt** để trang gọn hơn (không xóa dữ liệu, chỉ ẩn qua CSS — vẫn hiện đầy đủ trên desktop):
-- 2 nút Fanpage ở đầu trang (hero)
-- Khối "Khoảnh khắc của CLB" (gallery ảnh)
-- Số liệu trong ô SCMission
-- Ô Workshop và Training (giữ lại Podcast)
-- Footer chỉ còn logo + 3 link Facebook/LinkedIn/Email
-
-Muốn hiện lại phần nào trên mobile, báo lại — chỉnh trong `style.css`, phần `@media (max-width: 640px)`.
