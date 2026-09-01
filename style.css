@@ -3,7 +3,7 @@ Theme Name: LSC Theme
 Theme URI: https://lscftu2.com
 Author: Logistics Studying Club
 Description: Custom theme for CLB Logistics Studying Club (FTU CS2) - built free of any page-builder plugin.
-Version: 1.0.8
+Version: 1.0.9
 Requires at least: 6.0
 Requires PHP: 7.4
 Text Domain: lsc-theme
@@ -101,4 +101,14 @@ input, textarea { border-radius: 12px; }
 
   #du-an { min-height: 0 !important; }
   #du-an > article:first-child { min-height: 420px; }
+
+  #footer-brand-col { align-items: center; text-align: center; }
+  #footer-social-row { justify-content: center; }
+
+  #scmission { border-radius: 16px !important; }
+  #scmission > div:first-child {
+    padding: 28px !important;
+    justify-content: flex-end !important;
+    min-height: 420px;
+  }
 }
