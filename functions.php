@@ -48,6 +48,16 @@ function lsc_customize_register( $wp_customize ) {
 			'type'    => 'text',
 		) );
 	}
+
+	$wp_customize->add_setting( 'lsc_footer_about', array(
+		'default'           => 'Logistics Studying Club tự hào là CLB tiên phong của trường Đại học Ngoại thương Cơ sở II trong lĩnh vực Logistics và Quản lý chuỗi cung ứng.',
+		'sanitize_callback' => 'sanitize_textarea_field',
+	) );
+	$wp_customize->add_control( 'lsc_footer_about', array(
+		'label'   => 'Đoạn giới thiệu ngắn (footer)',
+		'section' => 'lsc_contact_section',
+		'type'    => 'textarea',
+	) );
 }
 add_action( 'customize_register', 'lsc_customize_register' );
 
