@@ -1,6 +1,6 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit; get_header(); ?>
 
-<div class="container section">
+<div style="padding:36px;max-width:1180px;margin:0 auto;">
 	<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<article <?php post_class(); ?> style="margin-bottom:48px;">
