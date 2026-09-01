@@ -12,8 +12,12 @@
 
 <div style="background:#FFFFFF;color:#1C4587">
 <header style="background:#1C4587;color:#FFFFFF;display:flex;align-items:center;justify-content:space-between;padding:14px 36px;border-bottom:1px solid rgba(255,255,255,0.2)">
-	<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-		<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/logo-ngang-trang-trim.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>" style="width:190px;display:block">
+	<a href="https://lscftu2.com" style="display:block;width:190px">
+		<?php if ( has_custom_logo() ) : ?>
+			<?php the_custom_logo(); ?>
+		<?php else : ?>
+			<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/logo-ngang-trang-trim.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>" style="width:190px;display:block">
+		<?php endif; ?>
 	</a>
 	<div style="display:flex;align-items:center;gap:24px">
 		<a href="#su-menh" style="font-size:13px;font-weight:600;color:#FFFFFF">Về chúng tôi</a>
