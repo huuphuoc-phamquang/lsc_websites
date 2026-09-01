@@ -7,7 +7,7 @@
 		<div style="display:flex;flex-direction:column;gap:24px">
 			<h1 style="margin:0;color:#FFFFFF;font-size:70px;line-height:0.98;letter-spacing:-0.025em"><?php echo esc_html( lsc_field( 'hero_title', 'CLB Logistics HCMC' ) ); ?></h1>
 			<p style="margin:0;font-size:18px;line-height:1.55;max-width:56ch;color:rgba(243,245,248,0.82)"><?php echo esc_html( lsc_field( 'hero_text', 'Logistics Studying Club tự hào là CLB tiên phong của trường Đại học Ngoại thương Cơ sở II trong lĩnh vực Logistics và Quản lý chuỗi cung ứng.' ) ); ?></p>
-			<div class="lsc-cta-row" style="display:flex;gap:12px">
+			<div id="hero-cta-row" class="lsc-cta-row" style="display:flex;gap:12px">
 				<a href="https://www.facebook.com/lscftuhcmc" target="_blank" rel="noopener noreferrer" class="lsc-btn-wrap" style="background:#1C4587;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;border:1px solid #FFFFFF;box-shadow:0 6px 18px rgba(0,0,0,0.22);display:inline-flex;align-items:center;white-space:nowrap">Fanpage Câu lạc bộ Logistics FTU HCMC</a>
 				<a href="https://www.facebook.com/scmissionlsc" target="_blank" rel="noopener noreferrer" class="lsc-btn-wrap" style="background:#CC0000;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;border:1px solid #FFFFFF;box-shadow:0 6px 18px rgba(0,0,0,0.22);display:inline-flex;align-items:center;white-space:nowrap">Fanpage SCMission</a>
 			</div>
@@ -63,7 +63,7 @@
 				<a href="https://www.facebook.com/scmissionlsc" target="_blank" rel="noopener noreferrer" class="lsc-btn-wrap" style="background:#CC0000;color:#FFFFFF;font-size:14px;font-weight:800;padding:13px 20px;border-radius:999px;display:inline-flex;align-items:center;white-space:nowrap">Fanpage SCMission</a>
 			</div>
 		</div>
-		<div style="position:relative;padding:44px 40px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-content:center;border-left:1px solid rgba(243,245,248,0.2)">
+		<div id="scmission-stats" style="position:relative;padding:44px 40px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-content:center;border-left:1px solid rgba(243,245,248,0.2)">
 			<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:52px;font-weight:800;line-height:0.95;letter-spacing:-0.03em;color:#FFFFFF"><?php echo esc_html( lsc_field( 'scmission_stat_seasons', '09' ) ); ?></span><span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.65)">Mùa tổ chức</span></div>
 			<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:52px;font-weight:800;line-height:0.95;letter-spacing:-0.03em;color:#FFFFFF"><?php echo esc_html( lsc_field( 'scmission_stat_participants', '5000+' ) ); ?></span><span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.65)">Thí sinh tham gia</span></div>
 			<div style="display:flex;flex-direction:column;gap:4px"><span style="font-size:52px;font-weight:800;line-height:0.95;letter-spacing:-0.03em;color:#FFFFFF"><?php echo esc_html( lsc_field( 'scmission_stat_sponsors', '70+' ) ); ?></span><span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(243,245,248,0.65)">Doanh nghiệp đồng hành</span></div>
